@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .row{
+
+            background-color: aqua;
+            height: 75px;
+            display: flex;
+        }
+        .col{
+            flex: 1;
+            
+        }
+        .vermelho{
+
+            background-color: blue;
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+        .azul{
+            background-color: brown;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+
+        <div class="col vermelho" onclick="oi()">
+            oi
+        </div>
+        <div class="col azul">conteudo</div>
+       
+
+    </div>
+
+    <script>
+        
+
+        function oi(){
+
+            alert('oi');
+        }
+
+        
+    </script>
+    
+</body>
+</html>

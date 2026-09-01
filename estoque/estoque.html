@@ -14,15 +14,15 @@
    
         
         
-        <a href="#" ><i class="fa-solid fa-triangle-exclamation"></i></a>
-        <a href="#"><i class="fa-solid fa-coins"></i></a>
-        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <a><i class="fa-solid fa-triangle-exclamation"></i></a>
+        <a href="Financeiro.html"><i class="fa-solid fa-coins"></i></a>
+        <a href="Calendario.html"><i class="fa-solid fa-calendar"></i></a>
 
         <div>
-        <input type="text" placeholder="pesquisar" >
+        <input type="text" placeholder="pesquisar" class="pesquisar" >
         </div>
-        <a href="#"><i class="fa-solid fa-gear"></i></a>
-        <a href="#" class="notification"><i class="fa-solid fa-bell"></i></a>
+        <a href="configuracoes.html"><i class="fa-solid fa-gear"></i></a>
+        <a href="Notificacoes.html" class="notification"><i class="fa-solid fa-bell"></i></a>
 
         
         <img id="perfil" src="perfil.png" href="#">
@@ -42,24 +42,23 @@
         
         <div class="processosSeparados">
             <h2>processos de caixa</h2>
-            <button class="lateral"> Relatórios</button>
-            <button class="lateral"> Mapeamento</button>
-            <button class="lateral"> Analise </button>
-            <button class="lateral"> Entradas P</button>
+            <button class="lateral" onclick="window.location.href='RelatoriosGerais.html'"> Relatórios Gerais</button>
+            <button class="lateral" onclick="window.location.href='Mapeamento.html'"> Mapeamento</button>
+            <button class="lateral" onclick="window.location.href='EntradaP.html'"> Entradas Produtos</button>
         </div>
 
         <div class="processosSeparados">
             <h2>processos de inventario</h2>
-            <button class="lateral"> Saídas P</button>
-            <button class="lateral"> Relatório de inventário</button>
-            <button class="lateral"> Relatório de caixa</button>
+            <button class="lateral" onclick="window.location.href='SaidaP.html'"> Saídas Produtos</button>
+            <button class="lateral" onclick="window.location.href='RelatoriosI.html'"> Relatório de inventário</button>
+            <button class="lateral" onclick="window.location.href='RelatoriosC.html'"> Relatório de caixa</button>
         </div>
         <div class="processosSeparados">
             <h2>processos estoque</h2>
-            <button class="lateral"> Analise geral</button>
-            <button class="lateral"> Banco de dados</button>
-            <button class="lateral"> App </button>
-            <button class="lateral"> Calendário </button>
+            <button class="lateral" onclick="window.location.href='AnaliseGeral.html'"> Analise geral</button>
+            <button class="lateral" onclick="window.location.href='BancoDeDados.html'"> Banco de dados</button>
+            <button class="lateral" onclick="window.location.href='App.html'"> App </button>
+            <button class="lateral" onclick="window.location.href='Calendario.html'"> Calendário </button>
         </div>
 
 
@@ -71,52 +70,52 @@
     
 
     <main>
-    <button class="card">
+    <button class="card" onclick="window.location.href='BalancoE.html'">
         <i class="fa-solid fa-boxes-stacked"></i>
         <h4>Balanço de estoque</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='Historico.html'">
         <i class="fa-solid fa-clock-rotate-left"></i>
         <h4>Histórico de movimentações</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='Produtos.html'">
         <i class="fa-solid fa-box-open"></i>
         <h4>Produtos</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='Fornecedores.html'">
         <i class="fa-solid fa-truck"></i>
         <h4>Fornecedores</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='Consulta.html'">
         <i class="fa-solid fa-magnifying-glass"></i>
         <h4>Consultar</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='RelatoriosGerais.html'">
         <i class="fa-solid fa-clipboard-list"></i>
-        <h4>Relatório de inventário</h4>
+        <h4>Relatório Gerais</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='Locais.html'">
         <i class="fa-solid fa-warehouse"></i>
         <h4>Locais de armazenamento</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='Funcionarios.html'">
         <i class="fa-solid fa-users"></i>
         <h4>Funcionários</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='Desempenho.html'">
         <i class="fa-solid fa-chart-line"></i>
         <h4>Desempenho</h4>
     </button>
 
-    <button class="card">
+    <button class="card" onclick="window.location.href='ResumoMensal.html'">
         <i class="fa-solid fa-chart-column"></i>
         <h4>Resumo mensal</h4>
     </button>
@@ -125,6 +124,8 @@
 
 
     </div>
+
+    <script src="estoque.js"></script>
     
 
     

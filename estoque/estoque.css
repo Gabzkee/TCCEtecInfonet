@@ -7,8 +7,8 @@ nav{
     display: flex;
     align-items: center;
     text-align: center;
-    padding-left: 265px;
-    gap: 30px;
+    padding-left: 500px;
+    gap: 50px;
     z-index: 1;
     position: relative;
     border-bottom: 3px solid black;
@@ -51,7 +51,7 @@ input{
 
     width: 120px;
     margin-top: 5px;
-    left: 1250px;
+    left: 1500px;
     cursor: pointer;
     position: absolute;
     border-radius: 100%;

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Geral</title>
+
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+    <nav>
+        
+        <button onclick="window.location.href='../estoque.html'"
+                    id="voltar">
+                    Voltar
+                </button>
+
+        <a href="#" title="Alertas">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </a>
+
+        <a href="../Calendario.html" title="Calendário">
+            <i class="fa-solid fa-calendar"></i>
+        </a>
+
+        <div>
+            <input type="text" placeholder="Pesquisar" class="pesquisar">
+        </div>
+
+        <a href="configuracoes.html" title="Configurações">
+            <i class="fa-solid fa-gear"></i>
+        </a>
+
+        <a href="Notificacoes.html" class="notification" title="Notificações">
+            <i class="fa-solid fa-bell"></i>
+        </a>
+
+        <img id="perfil" src="../perfil.png" alt="Perfil">
+    </nav>
+
+    <div class="conteudo">
+
+        <aside>
+            <div class="asidec">
+                <h2>Menu</h2>
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos de caixa</h2>
+                <button class="lateral"
+                    onclick="window.location.href='SaidaP.html'">
+                    Saída Produtos
+                </button>
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos de inventário</h2>
+                <button class="lateral"
+                    onclick="window.location.href='EntradaP.html'">
+                    Entrada Produtos
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='RelatoriosI.html'">
+                    Relatório de inventário
+                </button>
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos estoque</h2>
+
+                <button class="lateral"
+                    onclick="window.location.href='AnaliseGeral.html'">
+                    Análise geral
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='App.html'">
+                    App
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='Calendario.html'">
+                    Calendário
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='estoque.html'">
+                    Estoque
+                </button>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                
+
+                <h1>Fornecedores</h1>
+            </header>
+
+            <section class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Produtos</th>
+                            <th>Valores</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>oi</td>
+                            <td>oi</td>
+                            <td>oi</td>
+                            <td>oi</td>
+                    
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

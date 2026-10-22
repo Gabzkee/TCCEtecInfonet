@@ -22,25 +22,22 @@
         
         <div class="filtroM">
             
-        <label> <input type="checkbox" name="categoria" value="todos"> Todos </label>
-        <label> <input type="checkbox" name="categoria" value="acougue"> Açougue </label>
-        <label> <input type="checkbox" name="categoria" value="mercearia"> Mercearia </label>
-        <label> <input type="checkbox" name="categoria" value="frios"> Frios </label>
-        <label> <input type="checkbox" name="categoria" value="padaria"> Padaria </label>
+        <label> <input type="checkbox" name="categoria" data-categoria="todos" onchange="check()"> Todos </label>
+        <label> <input type="checkbox" name="categoria" data-categoria="acougue" onchange="check()"> Açougue </label>
+        <label> <input type="checkbox" name="categoria" data-categoria="mercearia" onchange="check()"> Mercearia </label>
+        <label> <input type="checkbox" name="categoria" data-categoria="frios" onchange="check()"> Frios </label>
+        <label> <input type="checkbox" name="categoria" data-categoria="padaria" onchange="check()"> Padaria </label>
     
         </div>
 
         <main id="produtosM">
 
-            <div class="produtos" value="padaria"> <h3> 12 pães</h3> <h5>padaria</h5> </div>
-            <div class="produtos"> <h3> 2kg Maminha</h3> <h5>Açougue</h5> </div>
-            <div class="produtos"> <h3> 1 Bloco de queijo</h3> <h5>frios</h5> </div>
-            <div class="produtos"> <h3> 3 kit kat</h3> <h5>mercearia</h5> </div>
+            <div class="produtos" data-categoria="padaria"> <h3> 12 pães</h3> <h5>padaria</h5> </div>
+            <div class="produtos" data-categoria="acougue"> <h3> 2kg Maminha</h3> <h5>Açougue</h5> </div>
+            <div class="produtos" data-categoria="frios"> <h3> 1 Bloco de queijo</h3> <h5>frios</h5> </div>
+            <div class="produtos" data-categoria="mercearia"> <h3> 3 kit kat</h3> <h5>mercearia</h5> </div>
         </main>
 
-    <script>
-
-        
-    </script>
+    <script src="saida.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@
             <i class="fa-solid fa-triangle-exclamation"></i>
         </a>
 
-        <a href="../Calendario.html" title="Calendário">
+        <a href="Calendario.html" title="Calendário">
             <i class="fa-solid fa-calendar"></i>
         </a>
 
@@ -35,11 +35,33 @@
             <i class="fa-solid fa-gear"></i>
         </a>
 
-        <a href="Notificacoes.html" class="notification" title="Notificações">
+        <a  class="notification" onclick="alert('sem notificações')">
             <i class="fa-solid fa-bell"></i>
         </a>
 
-        <img id="perfil" src="../perfil.png" alt="Perfil">
+        
+        <img id="perfil" src="../perfil.png" onclick="abrirPerfil()">
+
+        <div id="janelaPerfil" class="janela-perfil">
+
+            <span class="fecharPerfil" onclick="fecharPerfil()">X</span>
+
+            <h2>Minha conta</h2>
+
+            <img src="../perfil.png">
+
+            <h3>Nome do usuário</h3>
+
+            <label>Nome de usuário</label>
+            <input type="text" value="usuario123" readonly>
+
+            <label>Senha</label>
+            <input type="password" value="12345678" readonly>
+
+            <button onclick="sairConta()">Sair da conta</button>
+
+        </div>
+        
     </nav>
 
     <div class="conteudo">
@@ -88,10 +110,6 @@
                     Calendário
                 </button>
 
-                <button class="lateral"
-                    onclick="window.location.href='estoque.html'">
-                    Estoque
-                </button>
             </div>
         </aside>
 
@@ -131,6 +149,25 @@
         </main>
 
     </div>
+
+        <script>
+        
+        const janelaPerfil = document.getElementById("janelaPerfil");
+
+            function abrirPerfil() {
+                janelaPerfil.classList.add("aberto");
+            }
+
+            function fecharPerfil() {
+                janelaPerfil.classList.remove("aberto");
+            }
+
+            function sairConta() {
+                window.location.href = "../login.html";
+            }
+
+    </script>
+
 
 </body>
 </html>

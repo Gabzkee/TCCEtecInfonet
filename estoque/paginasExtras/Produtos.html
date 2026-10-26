@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos</title>
+
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <button onclick="window.location.href='../estoque.html'" id="voltar">
+            Voltar
+        </button>
+
+        <a href="#" title="Alertas">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </a>
+
+        <a href="Calendario.html" title="Calendário">
+            <i class="fa-solid fa-calendar"></i>
+        </a>
+
+        <input type="text" placeholder="Pesquisar produto..." class="pesquisar">
+
+        <a href="configuracoes.html" title="Configurações">
+            <i class="fa-solid fa-gear"></i>
+        </a>
+
+        <a  class="notification" onclick="alert('sem notificações')">
+            <i class="fa-solid fa-bell"></i>
+        </a>
+
+        
+        <img id="perfil" src="../perfil.png" alt="Perfil" onclick="abrirPerfil()">
+
+        <div id="janelaPerfil" class="janela-perfil">
+
+            <span class="fecharPerfil" onclick="fecharPerfil()">X</span>
+
+            <h2>Minha conta</h2>
+
+            <img src="../perfil.png" alt="Perfil">
+
+            <h3>Nome do usuário</h3>
+
+            <label>Nome de usuário</label>
+            <input type="text" value="usuario123" readonly>
+
+            <label>Senha</label>
+            <input type="password" value="12345678" readonly>
+
+            <button onclick="sairConta()">Sair da conta</button>
+
+        </div>
+
+    </nav>
+
+    <div class="conteudo">
+
+        <aside>
+
+            <div class="asidec">
+                <h2>Menu</h2>
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos de caixa</h2>
+
+                <button class="lateral"
+                    onclick="window.location.href='SaidaP.html'">
+                    Saída Produtos
+                </button>
+
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos de inventário</h2>
+
+                <button class="lateral"
+                    onclick="window.location.href='EntradaP.html'">
+                    Entrada Produtos
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='RelatoriosI.html'">
+                    Relatório de inventário
+                </button>
+
+            </div>
+
+            <div class="processosSeparados">
+
+                <h2>Processos estoque</h2>
+
+                <button class="lateral"
+                    onclick="window.location.href='AnaliseGeral.html'">
+                    Análise geral
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='App.html'">
+                    App
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='Calendario.html'">
+                    Calendário
+                </button>
+
+            </div>
+
+        </aside>
+
+        <main class="corpo">
+
+            <header class="cabecalho">
+
+                <div>
+                    <h1>Produtos</h1>
+                    <p>Produtos cadastrados no inventário</p>
+                </div>
+
+                <div class="total">
+                    <span>Produtos cadastrados</span>
+                    <strong>4</strong>
+                </div>
+
+            </header>
+
+            <section class="area-produtos">
+
+                <div class="barra-produtos">
+                    <h2>Lista de produtos</h2>
+
+                    <button id="abrirFiltro" class="abrir-filtro">
+                        <i class="fa-solid fa-filter"></i>
+                        Filtros
+                    </button>
+
+                </div>
+
+                <div class="filtroM">
+
+                    <label>
+                        <input type="checkbox" name="categoria" data-categoria="todos" onchange="check()"> Todos
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="categoria" data-categoria="acougue" onchange="check()"> Açougue
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="categoria" data-categoria="mercearia" onchange="check()"> Mercearia
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="categoria" data-categoria="frios" onchange="check()"> Frios
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="categoria"  data-categoria="padaria" onchange="check()"> Padaria
+                    </label>
+
+                </div>
+
+                <div id="produtosM">
+
+                    <article class="produtos" data-categoria="padaria">
+
+                        <span class="categoria">Padaria</span>
+                        <h3>12 pães</h3>
+                        <p>Produto de padaria</p>
+
+                    </article>
+
+                    <article class="produtos" data-categoria="acougue">
+
+                        <span class="categoria">Açougue</span>
+                        <h3>2 kg Maminha</h3>
+                        <p>Produto de açougue</p>
+
+                    </article>
+
+                    <article class="produtos" data-categoria="frios">
+
+                        <span class="categoria">Frios</span>
+                        <h3>1 bloco de queijo</h3>
+                        <p>Produto refrigerado</p>
+
+                    </article>
+
+                    <article class="produtos" data-categoria="mercearia">
+
+                        <span class="categoria">Mercearia</span>
+                        <h3>3 Kit Kat</h3>
+                        <p>Produto de mercearia</p>
+
+                    </article>
+
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="saida.js"></script>
+    
+</body>
+</html>

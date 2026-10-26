@@ -67,9 +67,8 @@ aside {
 
 .asidec h2 {margin: 15px 0;}
 
-.processosSeparados {background-color: rgba(255, 255, 255, 0.5); padding-bottom: 9px;}
-
-.processosSeparados h2 {text-align: center; margin: 0; padding: 12px 5px 0; font-size: 19px;}
+.processosSeparados { background-color: rgba(255, 255, 255, 0.5); padding: 0 8px 9px;}
+.processosSeparados h2 { text-align: center; margin-bottom: 0; font-size: 20px;}
 
 .lateral {
     width: 100%;
@@ -80,6 +79,7 @@ aside {
     cursor: pointer;
 }
 
+.lateral:hover { background-color: rgb(190, 190, 190);}
 
 main {
     margin-left: 270px;
@@ -184,3 +184,55 @@ header h1 {margin: 0; font-size: 27px;}
 button {
     cursor: pointer;
 }
+
+.janela-perfil {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    width: 280px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.janela-perfil.aberto { display: flex; flex-direction: column; gap: 10px; }
+.fecharPerfil { 
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    font-size: 30px;
+}
+
+.janela-perfil img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.janela-perfil h2,
+.janela-perfil h3 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.janela-perfil input { padding: 9px; border: 1px solid gray; border-radius: 4px; max-width: 260px;}
+
+.janela-perfil button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.notification{cursor: pointer;}

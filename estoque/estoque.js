@@ -1,4 +1,16 @@
+const janelaPerfil = document.getElementById("janelaPerfil");
 
-const pesquisar = document.querySelector(".pesquisar");
-const perfil = document.getElementById("perfil");
+function abrirPerfil() {
+    janelaPerfil.classList.add("aberto");
+}
+
+function fecharPerfil() {
+    janelaPerfil.classList.remove("aberto");
+}
+
+function sairConta() {
+    window.location.href = "login.html";
+}
+
+
 

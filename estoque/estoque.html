@@ -21,10 +21,33 @@
         <input type="text" placeholder="pesquisar" class="pesquisar" >
         </div>
         <a href="configuracoes.html"><i class="fa-solid fa-gear"></i></a>
-        <a href="Notificacoes.html" class="notification"><i class="fa-solid fa-bell"></i></a>
+
+        <a  class="notification" onclick="alert('sem notificações')">
+            <i class="fa-solid fa-bell"></i>
+        </a>
 
         
-        <img id="perfil" src="perfil.png" href="#">
+        <img id="perfil" src="perfil.png" alt="Perfil" onclick="abrirPerfil()">
+
+        <div id="janelaPerfil" class="janela-perfil">
+
+            <span class="fecharPerfil" onclick="fecharPerfil()">X</span>
+
+            <h2>Minha conta</h2>
+
+            <img src="perfil.png" alt="Perfil">
+
+            <h3>Nome do usuário</h3>
+
+            <label>Nome de usuário</label>
+            <input type="text" value="usuario123" readonly>
+
+            <label>Senha</label>
+            <input type="password" value="12345678" readonly>
+
+            <button onclick="sairConta()">Sair da conta</button>
+
+        </div>
 
         
         
@@ -86,7 +109,7 @@
         <h4>Fornecedores</h4>
     </button>
 
-    <button class="card" onclick="window.location.href='./paginasEtras/RelatoriosGerais.html'">
+    <button class="card" onclick="window.location.href='./paginasExtras/RelatoriosGerais.html'">
         <i class="fa-solid fa-clipboard-list"></i>
         <h4>Relatório Gerais</h4>
     </button>

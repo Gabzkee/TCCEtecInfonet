@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="relatoriosGerais.css">
+    <title>Relatórios Gerais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        
+        <button onclick="window.location.href='../estoque.html'" id="voltar">
+            Voltar
+        </button>
+
+        <a href="#" title="Alertas">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </a>
+
+        <a href="Calendario.html">
+            <i class="fa-solid fa-calendar"></i>
+        </a>
+
+        <div>
+            <input type="text" placeholder="Pesquisar" class="pesquisar">
+        </div>
+
+        <a href="configuracoes.html">
+            <i class="fa-solid fa-gear"></i>
+        </a>
+
+        <a  class="notification" onclick="alert('sem notificações')">
+            <i class="fa-solid fa-bell"></i>
+        </a>
+
+        
+        <img id="perfil" src="../perfil.png" alt="Perfil" onclick="abrirPerfil()">
+
+        <div id="janelaPerfil" class="janela-perfil">
+
+            <span class="fecharPerfil" onclick="fecharPerfil()">X</span>
+
+            <h2>Minha conta</h2>
+
+            <img src="../perfil.png" alt="Perfil">
+
+            <h3>Nome do usuário</h3>
+
+            <label>Nome de usuário</label>
+            <input type="text" value="usuario123" readonly>
+
+            <label>Senha</label>
+            <input type="password" value="12345678" readonly>
+
+            <button onclick="sairConta()">Sair da conta</button>
+
+        </div>
+        
+    </nav>
+
+    <div class="conteudo">
+
+        <aside>
+            <div class="asidec">
+                <h2>Menu</h2>
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos de caixa</h2>
+
+                <button class="lateral"
+                    onclick="window.location.href='SaidaP.html'">
+                    Saída Produtos
+                </button>
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos de inventário</h2>
+
+                <button class="lateral"
+                    onclick="window.location.href='EntradaP.html'">
+                    Entrada Produtos
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='RelatoriosI.html'">
+                    Relatório de inventário
+                </button>
+            </div>
+
+            <div class="processosSeparados">
+                <h2>Processos estoque</h2>
+
+                <button class="lateral"
+                    onclick="window.location.href='AnaliseGeral.html'">
+                    Análise geral
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='App.html'">
+                    App
+                </button>
+
+                <button class="lateral"
+                    onclick="window.location.href='Calendario.html'">
+                    Calendário
+                </button>
+            </div>
+        </aside>
+
+        <main>
+
+            <header>
+                <h1>Relatórios Gerais</h1>
+            </header>
+
+            <section class="resumo">
+
+                <div class="cartao">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <h2>Produtos cadastrados</h2>
+                    <p>4</p>
+                </div>
+
+                <div class="cartao">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <h2>Entradas</h2>
+                    <p>50 unidades</p>
+                </div>
+
+                <div class="cartao">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <h2>Saídas</h2>
+                    <p>15 unidades</p>
+                </div>
+
+                <div class="cartao">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h2>Estoque baixo</h2>
+                    <p>1 produto</p>
+                </div>
+
+            </section>
+
+            <section class="relatorio">
+                <h2>Resumo das movimentações</h2>
+
+                <div class="linha">
+                    <span>Entradas registradas</span>
+                    <strong class="entrada">50 unidades</strong>
+                </div>
+
+                <div class="linha">
+                    <span>Saídas registradas</span>
+                    <strong class="saida">15 unidades</strong>
+                </div>
+
+                <div class="linha">
+                    <span>Saldo das movimentações</span>
+                    <strong>+35 unidades</strong>
+                </div>
+            </section>
+
+            <section class="relatorio">
+                <h2>Produtos cadastrados</h2>
+
+                <div class="produto">
+                    <span>Kit Kat</span>
+                    <span>Mercearia</span>
+                    <strong>Estoque normal</strong>
+                </div>
+
+                <div class="produto">
+                    <span>Maminha</span>
+                    <span>Açougue</span>
+                    <strong class="alerta">Estoque baixo</strong>
+                </div>
+
+                <div class="produto">
+                    <span>Pães</span>
+                    <span>Padaria</span>
+                    <strong>Estoque normal</strong>
+                </div>
+
+                <div class="produto">
+                    <span>Queijo</span>
+                    <span>Frios</span>
+                    <strong>Estoque normal</strong>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+        <script>
+        
+        const janelaPerfil = document.getElementById("janelaPerfil");
+
+            function abrirPerfil() {
+                janelaPerfil.classList.add("aberto");
+            }
+
+            function fecharPerfil() {
+                janelaPerfil.classList.remove("aberto");
+            }
+
+            function sairConta() {
+                window.location.href = "../login.html";
+            }
+
+    </script>
+
+
+</body>
+</html>
